@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='-en -zh-CN'>
+<html lang='-en -zh-CN -zh-TW'>
 
 <head>
   <meta name="generator" content="Hexo 5.4.2">
@@ -18,14 +18,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>归档 - <font face="Gigi" color=LightSeaGreen>CGele</font>🐯</title>
+  <title>归档 - CGele🐯</title>
 
   
     <meta name="description" content="这是一个游离于MC边缘的秘密基地">
 <meta property="og:type" content="website">
 <meta property="og:title" content="归档">
 <meta property="og:url" content="http://example.com/archives/2022/index.html">
-<meta property="og:site_name" content="&lt;font face&#x3D;&quot;Gigi&quot; color&#x3D;LightSeaGreen&gt;CGele&lt;&#x2F;font&gt;🐯">
+<meta property="og:site_name" content="CGele🐯">
 <meta property="og:description" content="这是一个游离于MC边缘的秘密基地">
 <meta property="og:locale">
 <meta property="article:author" content="ChongCao">
@@ -68,7 +68,7 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="./images/myself.jpg" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main"><font face="Gigi" color=LightSeaGreen>CGele</font>🐯</div><div class="sub normal cap"><font color=Darkorange>探寻真我</font></div><div class="sub hover cap" style="opacity:0"><font color=HotPink>接纳世界</font></div></a></div>
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="./images/myself.jpg" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CGele🐯</div><div class="sub normal cap"><font color=Darkorange>探寻真我</font></div><div class="sub hover cap" style="opacity:0"><font color=HotPink>接纳世界</font></div></a></div>
 <nav class="menu dis-select"><a class="nav-item active" href="/">博客</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">随记</a><a class="nav-item" href="/more/">更多</a></nav></header>
 
 
@@ -97,7 +97,7 @@
 
 <header class="header mobile-only">
 
-<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="./images/myself.jpg" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main"><font face="Gigi" color=LightSeaGreen>CGele</font>🐯</div><div class="sub normal cap"><font color=Darkorange>探寻真我</font></div><div class="sub hover cap" style="opacity:0"><font color=HotPink>接纳世界</font></div></a></div>
+<div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="./images/myself.jpg" onerror="javascript:this.classList.add('error');this.src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"></a><a class="title" href="/"><div class="main">CGele🐯</div><div class="sub normal cap"><font color=Darkorange>探寻真我</font></div><div class="sub hover cap" style="opacity:0"><font color=HotPink>接纳世界</font></div></a></div>
 </header>
 
 
@@ -304,6 +304,34 @@
 
 
 <!-- optional -->
+
+  <script>
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.log(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+      loadBeaudar();
+  });
+</script>
+
 
 
 
